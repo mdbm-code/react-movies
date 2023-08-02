@@ -53,7 +53,12 @@ export default class Movies extends Component {
           isLoading: false,
         });
       })
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        console.error(err);
+        this.setState({
+          isLoading: false,
+        });
+      });
   };
 
   componentDidMount() {
