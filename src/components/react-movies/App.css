@@ -1,0 +1,36 @@
+nav {
+  padding: 0 1rem;
+}
+
+.content {
+  min-height: calc(100vh - 70px - 64px);
+}
+
+.card .card-content {
+  padding: 8px;
+  min-height: 5rem;
+}
+
+.card .card-title {
+  font-size: 18px;
+}
+.card .card-content .card-title {
+  line-height: 12px;
+  margin-bottom: 5px;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
