@@ -41,7 +41,7 @@ export default class Movies extends Component {
       isLoading: true,
     });
 
-    const url = `http://www.omdbapi.com/?apikey=2d3e8ade&s=${
+    const url = `https://www.omdbapi.com/?apikey=2d3e8ade&s=${
       this.state.searchString ? this.state.searchString : 'matrix'
     }${type !== 'all' ? `&type=${type}` : ''}`;
 
